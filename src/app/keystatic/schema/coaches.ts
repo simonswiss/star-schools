@@ -15,7 +15,12 @@ export const coaches = collection({
       publicPath: '/images/coaches/',
     }),
     shortIntro: fields.text({ label: 'Short Intro', multiline: true }),
-    bio: fields.mdx({ label: 'Bio' }),
+    bio: fields.mdx({
+      label: 'Bio',
+      options: {
+        image: false,
+      },
+    }),
     qualifications: fields.array(fields.text({ label: 'Qualification' }), {
       label: 'Qualifications',
       itemLabel: (props) => props.value,
