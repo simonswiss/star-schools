@@ -1,0 +1,12 @@
+services:
+  - service: Specialised Coaching (Before and After School)
+    content: |
+      Football, basketball, Athletics, Fundamental movement skills.
+  - service: In-School PE & Release from Face-to-Face Teaching
+    content: >
+      Basketball, Football, Dance, Athletics, Fundamental Movement Skills, Game
+      Sense & Strategy.
+  - service: School Carnivals & Special Events
+    content: >
+      Meet Management, Timetable Coordination & Booking, Teacher Roles &
+      Briefings, Event Officiating.

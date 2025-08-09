@@ -8,15 +8,5 @@ export const homepage = singleton({
     introductionText: fields.mdx({
       label: 'Introduction Main Text',
     }),
-    services: fields.array(
-      fields.object({
-        service: fields.text({ label: 'Service' }),
-        content: fields.mdx.inline({ label: 'Content' }),
-      }),
-      {
-        label: 'Service',
-        itemLabel: (data) => data.fields.service.value,
-      }
-    ),
   },
 })

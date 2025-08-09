@@ -1,11 +1,13 @@
 import { reader } from '@/app/keystatic/reader'
 import { MdxRenderer } from '@/components/MdxRenderer'
+import Image from 'next/image'
 
 import Link from 'next/link'
 
 export default async function ServicesPage() {
-  const data = await reader.singletons.homepage.read({ resolveLinkedFiles: true })
-  if (!data) throw new Error('No data found')
+  const homepageData = await reader.singletons.homepage.read({ resolveLinkedFiles: true })
+  const servicesData = await reader.singletons.services.read({ resolveLinkedFiles: true })
+  if (!homepageData || !servicesData) throw new Error('No data found')
   return (
     <>
       <div className="bg-white mt-24 sm:mt-32">
@@ -13,7 +15,7 @@ export default async function ServicesPage() {
           <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
             <div className="grid max-w-xl grid-cols-1 gap-8 text-base/7 text-gray-700 lg:max-w-none">
               <div className="prose">
-                <MdxRenderer content={data.introductionText} />
+                <MdxRenderer content={homepageData.introductionText} />
               </div>
             </div>
             <div className="mt-6 flex">
@@ -37,8 +39,17 @@ export default async function ServicesPage() {
         </div>
         <div className="mx-auto mt-16 max-w-2xl lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-16 lg:max-w-none lg:grid-cols-3">
-            {data.services.map((service) => (
+            {servicesData.services.map((service) => (
               <div key={service.service} className="flex flex-col">
+                <div className="relative h-48 aspect-video mb-4">
+                  <Image
+                    src={service.image ? service.image : '/images/seo-image.png'}
+                    alt={service.service}
+                    fill
+                    className="absolute inset-0 w-full h-full object-cover rounded-md ring-1 ring-black/10"
+                  />
+                </div>
+
                 <dt className="text-base/7 font-semibold text-gray-900">{service.service}</dt>
                 <dd className="mt-1 lg:mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
                   <p className="flex-auto">{service.content}</p>
