@@ -72,6 +72,23 @@ export default async function Example({ params }: { params: Promise<{ coach: str
                 </li>
               ))}
             </ul>
+
+            {/* Badges */}
+            {coach.badges.length > 0 && (
+              <ul role="list" className="mt-10 flex flex-wrap gap-4">
+                {coach.badges.map((badge) => (
+                  <li key={badge.altText} className="flex items-center flex-wrap relative size-20">
+                    <Image
+                      className="absolute inset-0 w-full h-full object-cover"
+                      src={badge.image}
+                      alt={badge.altText}
+                      width={100}
+                      height={100}
+                    />
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
 
           <div>

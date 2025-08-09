@@ -25,5 +25,19 @@ export const coaches = collection({
       label: 'Qualifications',
       itemLabel: (props) => props.value,
     }),
+    badges: fields.array(
+      fields.object({
+        image: fields.image({
+          label: 'Badge',
+          directory: 'public/images/coaches/badges',
+          publicPath: '/images/coaches/badges/',
+        }),
+        altText: fields.text({ label: 'Alt Text', validation: { isRequired: true } }),
+      }),
+      {
+        label: 'Badges',
+        itemLabel: (data) => data.fields.altText.value || 'Please add alt text!',
+      }
+    ),
   },
 })
