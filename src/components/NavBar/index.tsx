@@ -1,29 +1,13 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { twMerge } from 'tailwind-merge'
 
 import { Logo } from '@/components/Logo'
 
-type NavigationData = {
-  links: readonly {
-    readonly name: string
-    readonly href: string
-  }[]
-}
-
 export default function Navigation() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const pathname = usePathname()
-
-  // Close mobile menu on route change
-  useEffect(() => {
-    setMobileMenuOpen(false)
-  }, [pathname])
 
   return (
     <header className="absolute inset-x-0 top-0 z-10">
