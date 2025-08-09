@@ -31,6 +31,7 @@ export const coaches = collection({
           label: 'Badge',
           directory: 'public/images/coaches/badges',
           publicPath: '/images/coaches/badges/',
+          validation: { isRequired: true },
         }),
         altText: fields.text({ label: 'Alt Text', validation: { isRequired: true } }),
       }),
