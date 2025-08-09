@@ -1,102 +1,81 @@
-import { config, collection } from '@keystatic/core'
-import React from 'react'
+import { config } from '@keystatic/core'
 
 import { storage } from './storage'
 
 import { homepage } from './schema/homepage'
 import { coachesPage } from './schema/coaches-page'
-import { registerPage } from './schema/register-page'
-import { contacts } from './schema/contacts'
-
-import { sydneyPages, woopiPages, generalPages, dynamicPages } from './schema/dynamic-pages'
-import { sydneyNavigation, woopiNavigation, headerNavigation } from './schema/navigation'
-import { sydneyPage, sydneySessionsPage, woopiPage, woopiSessionsPage } from './schema/pages'
 
 import { coaches } from './schema/coaches'
-import { sessionSchema } from './schema/sessions'
-import { testimonials } from './schema/testimonials'
-import { faqs } from './schema/faqs'
-import { partnershipsPage, partnerships } from './schema/partnerships'
 
 export default config({
   storage,
   ui: {
     brand: {
-      name: 'Star Athletics',
-      mark: StarAthleticsLogo,
-    },
-    navigation: {
-      Sydney: [
-        'sydneyPage',
-        'sydneySessionsPage',
-        'sydneySessions',
-        'sydneyPages',
-        'sydneyNavigation',
-      ],
-      Woopi: ['woopiPage', 'woopiSessionsPage', 'woopiSessions', 'woopiPages', 'woopiNavigation'],
-      'Cross-Region': ['generalPages'],
-      Collections: ['coaches', 'testimonials', 'partnerships'],
-      Pages: ['homepage', 'coachesPage', 'faqs', 'partnershipsPage', 'contacts', 'registerPage'],
-      Navigation: ['headerNavigation'],
+      name: 'Star Schools',
+      mark: StarSchoolsLogo,
     },
   },
   singletons: {
-    sydneyNavigation,
-    woopiNavigation,
-    headerNavigation,
-
     homepage,
     coachesPage,
-    faqs,
-    contacts,
-    registerPage,
-
-    sydneyPage,
-    sydneySessionsPage,
-    woopiPage,
-    woopiSessionsPage,
-
-    partnershipsPage,
   },
   collections: {
-    sydneyPages,
-    woopiPages,
-    generalPages,
-    dynamicPages,
-    sydneySessions: collection({
-      label: 'Sydney Sessions (Collection)',
-      path: 'src/content/sessions/sydney/*',
-      slugField: 'name',
-      format: { contentField: 'description' },
-      schema: sessionSchema,
-    }),
-    woopiSessions: collection({
-      label: 'Woopi Sessions (Collection)',
-      path: 'src/content/sessions/woopi/*',
-      slugField: 'name',
-      format: { contentField: 'description' },
-      schema: sessionSchema,
-    }),
     coaches,
-    testimonials,
-    partnerships,
   },
 })
 
 // ------------------------------
 // Logo Mark
 // ------------------------------
-function StarAthleticsLogo(_: { colorScheme: 'light' | 'dark' }) {
+function StarSchoolsLogo(_: { colorScheme: 'light' | 'dark' }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" fill="none">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 179 180"
+      style={{ height: 24 }}
+      fill="none"
+    >
       <path
         fill="currentColor"
-        d="m25 13-2 1v-2l-2-2h3l1-2 1 2h2l-1 2v2l-2-1Zm7-4h-5l-2-5-2 5h-5l4 4-1 4 4-2 4 2-1-4 4-4Z"
+        d="m130.455 121.953-11.54 6.486 2.638-12.916-9.77-8.907 13.17-1.499 5.502-11.987 5.501 11.989 13.172 1.498-9.77 8.906 2.638 12.916-11.541-6.486Zm37.259-20.183-25.704-2.925-10.738-23.397-10.739 23.397-25.704 2.925 19.065 17.383-5.146 25.207 22.522-12.655 22.523 12.655-5.147-25.207 19.068-17.383Z"
       />
       <path
         fill="currentColor"
-        d="m31 19-6-3-6 3 2-6-5-4 6-1-5-8L0 24 15 9l4 4-16 9 16-8-1 6-18 4h34l-3-5Z"
+        d="m160.829 154.462-29.557-16.606-29.645 16.654 6.774-33.173-25.093-22.881 33.829-3.848.517-1.127L89.21 53.307 0 179.307l78.003-77.285 19.54 17.424-81.761 51.343 85.125-42.145-6.078 27.56L0 179.307h178.42l-17.591-24.845Z"
       />
+      <g clipPath="url(#a)">
+        <path
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="3.333"
+          d="m96.592 31.853 10.525 17.007"
+        />
+        <path
+          fill="currentColor"
+          d="m55.626 67.005 6.14 9.92c1.395 2.256 4.526 3.31 8.702 2.93 4.176-.378 9.056-2.16 13.567-4.95 4.51-2.792 8.281-6.365 10.484-9.933 2.203-3.569 2.656-6.84 1.26-9.096l-6.14-9.92"
+        />
+        <path
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="3.333"
+          d="m55.626 67.005 6.14 9.92c1.395 2.256 4.526 3.31 8.702 2.93 4.176-.378 9.056-2.16 13.567-4.95 4.51-2.792 8.281-6.365 10.484-9.933 2.203-3.569 2.656-6.84 1.26-9.096l-6.14-9.92"
+        />
+        <path
+          fill="currentColor"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="3.333"
+          d="M96.566 35.484a3.332 3.332 0 0 0-3.278-5.177l-31.143 3.969a6.667 6.667 0 0 0-4.705 2.912L39.99 63.275a3.334 3.334 0 0 0 3.213 5.193l31.147-3.956a6.668 6.668 0 0 0 4.705-2.912l17.51-26.116Z"
+        />
+      </g>
+      <defs>
+        <clipPath id="a">
+          <path fill="currentColor" d="M16.693 42.099 84.72 0l42.099 68.027-68.027 42.099z" />
+        </clipPath>
+      </defs>
     </svg>
   )
 }

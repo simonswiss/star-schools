@@ -1,13 +1,53 @@
-import Hero from './_partials/Hero'
-import Introduction from './_partials/Introduction'
-import Testimonials from './_partials/Testimonials'
+import { reader } from '@/app/keystatic/reader'
+import { MdxRenderer } from '@/components/MdxRenderer'
 
-export default function Home() {
+import Link from 'next/link'
+
+export default async function ServicesPage() {
+  const data = await reader.singletons.homepage.read({ resolveLinkedFiles: true })
+  if (!data) throw new Error('No data found')
   return (
     <>
-      <Hero />
-      <Introduction />
-      <Testimonials />
+      <div className="bg-white mt-24 sm:mt-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+            <div className="grid max-w-xl grid-cols-1 gap-8 text-base/7 text-gray-700 lg:max-w-none">
+              <div className="prose">
+                <MdxRenderer content={data.introductionText} />
+              </div>
+            </div>
+            <div className="mt-6 flex">
+              <Link
+                href="/coaches"
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Meet the coaches
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Services */}
+      <div className="mt-20 mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:mx-0">
+          <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+            Our Services
+          </h2>
+        </div>
+        <div className="mx-auto mt-16 max-w-2xl lg:max-w-none">
+          <dl className="grid max-w-xl grid-cols-1 gap-16 lg:max-w-none lg:grid-cols-3">
+            {data.services.map((service) => (
+              <div key={service.service} className="flex flex-col">
+                <dt className="text-base/7 font-semibold text-gray-900">{service.service}</dt>
+                <dd className="mt-1 lg:mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
+                  <p className="flex-auto">{service.content}</p>
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </div>
     </>
   )
 }
