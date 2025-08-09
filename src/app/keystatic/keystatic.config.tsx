@@ -8,6 +8,7 @@ import { coaches } from './schema/coaches'
 
 import { LogoMark } from './LogoMark'
 import { services } from './schema/services'
+import { contact } from './schema/contact'
 
 export default config({
   storage,
@@ -21,6 +22,7 @@ export default config({
     homepage,
     coachesPage,
     services,
+    contact,
   },
   collections: {
     coaches,

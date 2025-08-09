@@ -5,9 +5,16 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default async function ServicesPage() {
-  const homepageData = await reader.singletons.homepage.read({ resolveLinkedFiles: true })
-  const servicesData = await reader.singletons.services.read({ resolveLinkedFiles: true })
-  if (!homepageData || !servicesData) throw new Error('No data found')
+  const [homepageData, servicesData, contactData] = await Promise.all([
+    reader.singletons.homepage.read({ resolveLinkedFiles: true }),
+    reader.singletons.services.read({ resolveLinkedFiles: true }),
+    reader.singletons.contact.read(),
+  ])
+
+  // Bomb if any of the data is missing
+  if (!homepageData) throw new Error('Missing homepage data')
+  if (!servicesData) throw new Error('Missing services data')
+
   return (
     <>
       <div className="bg-white mt-24 sm:mt-32">
@@ -18,12 +25,18 @@ export default async function ServicesPage() {
                 <MdxRenderer content={homepageData.introductionText} />
               </div>
             </div>
-            <div className="mt-6 flex">
-              <Link
-                href="/coaches"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Meet the coaches
+
+            <div className="mt-10 flex items-center gap-x-6">
+              {contactData?.contactForm && (
+                <Link
+                  href={contactData.contactForm}
+                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Contact us
+                </Link>
+              )}
+              <Link href="/coaches" className="text-sm/6 font-semibold text-gray-900">
+                Meet the coaches <span aria-hidden="true">→</span>
               </Link>
             </div>
           </div>
