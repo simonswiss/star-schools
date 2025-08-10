@@ -93,14 +93,7 @@ export default async function Example({ params }: { params: Promise<{ coach: str
 
           <div>
             <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
-              <p
-                className={twMerge(
-                  'text-base font-semibold leading-7',
-                  coach.region === 'Sydney' ? 'text-sky-500' : 'text-purple-600'
-                )}
-              >
-                {coach.role}
-              </p>
+              <p className="text-base font-semibold leading-7 text-purple-600">{coach.role}</p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 Meet {coach.name}!
               </h1>
@@ -108,18 +101,6 @@ export default async function Example({ params }: { params: Promise<{ coach: str
               <div className="prose mt-6 max-w-xl">
                 <MdxRenderer content={coach.bio} />
               </div>
-            </div>
-            <div className="mt-10 flex">
-              <Link
-                href={`/${coach.region.toLowerCase()}/sessions`}
-                className={twMerge(
-                  'text-base font-semibold leading-7 hover:underline',
-                  coach.region === 'Sydney' ? 'text-sky-500' : 'text-purple-600'
-                )}
-              >
-                View {coach.name}&apos;s sessions in {coach.region}{' '}
-                <span aria-hidden="true">&rarr;</span>
-              </Link>
             </div>
           </div>
         </div>

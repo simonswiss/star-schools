@@ -83,10 +83,7 @@ export default async function Example() {
 
                 <Link
                   href={`/coaches/${coach.slug}`}
-                  className={twMerge(
-                    'mt-6 block text-base font-semibold leading-7 hover:underline',
-                    coach.entry.region === 'Sydney' ? 'text-sky-600' : 'text-purple-500'
-                  )}
+                  className="mt-6 block text-base font-semibold leading-7 hover:underline text-purple-500"
                 >
                   Read full bio <span aria-hidden="true">→</span>
                 </Link>

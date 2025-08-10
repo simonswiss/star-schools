@@ -8,7 +8,6 @@ export const coaches = collection({
   schema: {
     name: fields.slug({ name: { label: 'Name' } }),
     role: fields.text({ label: 'Role' }),
-    region: fields.text({ label: 'Region' }),
     avatar: fields.image({
       label: 'Avatar',
       directory: 'public/images/coaches',
