@@ -31,6 +31,8 @@ export default async function Example() {
   const coaches = await reader.collections.coaches.all({ resolveLinkedFiles: true })
   if (!coaches) throw new Error('No coaches found — please add in CMS')
 
+  coaches.sort((a, b) => (a.entry.sortOrder || 0) - (b.entry.sortOrder || 0))
+
   return (
     <div className="bg-white py-24 md:py-32">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-12 gap-y-20 px-6 lg:px-8 xl:grid-cols-5">
