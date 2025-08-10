@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { twMerge } from 'tailwind-merge'
 import { MdxRenderer } from '@/components/MdxRenderer'
 import { ShieldCheckIcon } from '@heroicons/react/24/outline'
 

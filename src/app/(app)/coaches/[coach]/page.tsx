@@ -1,9 +1,7 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { ShieldCheckIcon } from '@heroicons/react/24/outline'
 import { reader } from '@/app/keystatic/reader'
 import { MdxRenderer } from '@/components/MdxRenderer'
-import { twMerge } from 'tailwind-merge'
 
 import { sharedOpenGraphMetadata } from '@/lib/shared-metadata'
 
