@@ -39,5 +39,9 @@ export const coaches = collection({
         itemLabel: (data) => data.fields.altText.value || 'Please add alt text!',
       }
     ),
+    sortOrder: fields.number({
+      label: 'Sort Order',
+      description: 'Used to sort the order of coaches display. Lower number will show up first.',
+    }),
   },
 })
