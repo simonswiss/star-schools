@@ -1,7 +1,14 @@
 services:
   - service: Specialised Coaching (Before and After School)
-    content: |
-      Football, basketball, Athletics, Fundamental movement skills.
+    content: >
+      Kickstart the day or finish strong with specialist coaching sessions just
+      for students! Whether it's a block of training to sharpen up their skills
+      for PSSA or CHS  **Basketball, Football, Athletics (sprints, jumps,
+      throws, distance)** or want to sharpen your **Fundamental Movement
+      Skills**, these sessions are designed to help the students grow as an
+      athlete and as a team. Our coaches will guide you to improve skills, boost
+      confidence, and enjoy training in a fun and supportive environment — all
+      before or after the school bell.
   - service: In-School PE & Release from Face-to-Face Teaching
     content: >
       Basketball, Football, Dance, Athletics, Fundamental Movement Skills, Game
@@ -10,3 +17,5 @@ services:
     content: >
       Meet Management, Timetable Coordination & Booking, Teacher Roles &
       Briefings, Event Officiating.
+  - service: Sporting Schools Programs
+    content: ''
