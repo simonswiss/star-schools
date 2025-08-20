@@ -1,5 +1,6 @@
 services:
-  - service: Specialised Coaching (Before and After School)
+  - image: /images/homepage/services/services/0/image.png
+    service: Specialised Coaching (Before and After School)
     content: >
       Kickstart the day or finish strong with specialist coaching sessions just
       for students! Whether it's a block of training to sharpen up their skills
