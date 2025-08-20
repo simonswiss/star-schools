@@ -22,7 +22,8 @@ services:
       movement skills directly to the syllabus. Every lesson is structured,
       engaging, and development-focused, with **reportable outcomes** provided
       for your students.
-  - service: Sporting Schools Programs
+  - image: /images/homepage/services/services/2/image.png
+    service: Sporting Schools Programs
     content: >
       Star-Schools is a **registered Sporting Schools provider** for **Football,
       Basketball, and Athletics (all disciplines)**. Our qualified coaches can
