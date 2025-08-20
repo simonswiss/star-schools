@@ -40,7 +40,8 @@ services:
       With engaging sessions tailored to age and ability, Star-Schools makes it
       easy for schools to meet curriculum needs while giving every student the
       chance to shine.
-  - service: School Carnivals & Special Events
+  - image: /images/homepage/services/services/3/image.png
+    service: School Carnivals & Special Events
     content: >
       Star-Schools takes the stress out of organising your big school events.
       From **athletics and swimming carnivals** to **gala days and special
