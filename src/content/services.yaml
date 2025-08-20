@@ -21,19 +21,6 @@ services:
       movement skills directly to the syllabus. Every lesson is structured,
       engaging, and development-focused, with **reportable outcomes** provided
       for your students.
-  - service: School Carnivals & Special Events
-    content: >
-      Star-Schools takes the stress out of organising your big school events.
-      From **athletics and swimming carnivals** to **gala days and special
-      celebrations**, our team provides complete **planning, management, and
-      execution**.
-
-
-      We handle everything,  from scheduling and equipment setup to officiating,
-      results, and smooth event flow, so staff can focus on supporting students.
-      With our experience and professional team, schools can be confident every
-      event will run seamlessly, be inclusive, and celebrate student
-      achievement.
   - service: Sporting Schools Programs
     content: >
       Star-Schools is a **registered Sporting Schools provider** for **Football,
@@ -50,3 +37,16 @@ services:
       With engaging sessions tailored to age and ability, Star-Schools makes it
       easy for schools to meet curriculum needs while giving every student the
       chance to shine.
+  - service: School Carnivals & Special Events
+    content: >
+      Star-Schools takes the stress out of organising your big school events.
+      From **athletics and swimming carnivals** to **gala days and special
+      celebrations**, our team provides complete **planning, management, and
+      execution**.
+
+
+      We handle everything,  from scheduling and equipment setup to officiating,
+      results, and smooth event flow, so staff can focus on supporting students.
+      With our experience and professional team, schools can be confident every
+      event will run seamlessly, be inclusive, and celebrate student
+      achievement.
