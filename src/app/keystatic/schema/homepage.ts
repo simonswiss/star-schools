@@ -8,5 +8,10 @@ export const homepage = singleton({
     introductionText: fields.mdx({
       label: 'Introduction Main Text',
     }),
+    image: fields.image({
+      label: 'Image',
+      directory: 'public/images/homepage',
+      publicPath: '/images/homepage',
+    }),
   },
 })

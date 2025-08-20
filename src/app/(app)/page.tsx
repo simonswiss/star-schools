@@ -18,7 +18,16 @@ export default async function ServicesPage() {
   return (
     <>
       <div className="bg-white mt-24 sm:mt-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 grid lg:grid-cols-2 gap-8 lg:gap-16">
+          {homepageData.image && (
+            <Image
+              src={homepageData.image}
+              alt="Star Athletics"
+              width={1000}
+              height={1000}
+              className="w-full max-w-lg mx-auto lg:max-w-none h-full object-cover rounded-xl"
+            />
+          )}
           <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
             <div className="grid max-w-xl grid-cols-1 gap-8 text-base/7 text-gray-700 lg:max-w-none">
               <div className="prose">
@@ -65,7 +74,7 @@ export default async function ServicesPage() {
 
                 <dt className="text-base/7 font-semibold text-gray-900">{service.service}</dt>
                 <dd className="mt-1 lg:mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
-                  <p className="flex-auto">{service.content}</p>
+                  <MdxRenderer content={service.content} />
                 </dd>
               </div>
             ))}
