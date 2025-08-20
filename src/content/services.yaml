@@ -10,7 +10,8 @@ services:
       athlete and as a team. Our coaches will guide you to improve skills, boost
       confidence, and enjoy training in a fun and supportive environment — all
       before or after the school bell.
-  - service: In-School PE & Release from Face-to-Face Teaching
+  - image: /images/homepage/services/services/1/image.png
+    service: In-School PE & Release from Face-to-Face Teaching
     content: >
       Star-Schools offers **NESA qualified and approved** coaching that fits
       seamlessly into your school timetable. Our programs provide schools with
