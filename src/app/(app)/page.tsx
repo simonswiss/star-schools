@@ -61,10 +61,10 @@ export default async function ServicesPage() {
           </h2>
         </div>
         <div className="mx-auto mt-16 max-w-2xl lg:max-w-none">
-          <dl className="grid max-w-xl grid-cols-1 gap-16 lg:max-w-none lg:grid-cols-3">
+          <dl className="grid max-w-xl grid-cols-1 gap-16 lg:max-w-none lg:grid-cols-2">
             {servicesData.services.map((service) => (
               <div key={service.service} className="flex flex-col">
-                <div className="relative h-48 aspect-video mb-4">
+                <div className="relative aspect-video mb-4">
                   <Image
                     src={service.image ? service.image : '/images/seo-image.png'}
                     alt={service.service}
@@ -73,8 +73,8 @@ export default async function ServicesPage() {
                   />
                 </div>
 
-                <dt className="text-base/7 font-semibold text-gray-900">{service.service}</dt>
-                <dd className="mt-1 lg:mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
+                <dt className="mt-4 font-semibold text-gray-900 text-xl">{service.service}</dt>
+                <dd className="mt-4 lg:mt-4 text-base/7 text-gray-600 prose">
                   <MdxRenderer content={service.content} />
                 </dd>
               </div>
