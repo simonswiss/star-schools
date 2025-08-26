@@ -1,29 +1,5 @@
 services:
   - image: /images/homepage/services/services/0/image.png
-    service: Specialised Coaching (Before and After School)
-    content: >
-      Kickstart the day or finish strong with specialist coaching sessions just
-      for students! Whether it's a block of training to sharpen up their skills
-      for PSSA or CHS  **Basketball, Football, Athletics (sprints, jumps,
-      throws, distance)** or want to sharpen your **Fundamental Movement
-      Skills**, these sessions are designed to help the students grow as an
-      athlete and as a team. Our coaches will guide you to improve skills, boost
-      confidence, and enjoy training in a fun and supportive environment — all
-      before or after the school bell.
-  - image: /images/homepage/services/services/1/image.png
-    service: In-School PE & Release from Face-to-Face Teaching
-    content: >
-      Star-Schools offers **NESA qualified and approved** coaching that fits
-      seamlessly into your school timetable. Our programs provide schools with
-      high-quality **In-School PE delivery** as well as **Release from
-      Face-to-Face (RFF) Teaching** options.
-
-
-      We tailor each session to meet curriculum outcomes, matching sports and
-      movement skills directly to the syllabus. Every lesson is structured,
-      engaging, and development-focused, with **reportable outcomes** provided
-      for your students.
-  - image: /images/homepage/services/services/2/image.png
     service: Sporting Schools Programs
     content: >
       Star-Schools is a **registered Sporting Schools provider** for **Football,
@@ -40,6 +16,30 @@ services:
       With engaging sessions tailored to age and ability, Star-Schools makes it
       easy for schools to meet curriculum needs while giving every student the
       chance to shine.
+  - image: /images/homepage/services/services/1/image.png
+    service: In-School PE & Release from Face-to-Face Teaching
+    content: >
+      Star-Schools offers **NESA qualified and approved** coaching that fits
+      seamlessly into your school timetable. Our programs provide schools with
+      high-quality **In-School PE delivery** as well as **Release from
+      Face-to-Face (RFF) Teaching** options.
+
+
+      We tailor each session to meet curriculum outcomes, matching sports and
+      movement skills directly to the syllabus. Every lesson is structured,
+      engaging, and development-focused, with **reportable outcomes** provided
+      for your students.
+  - image: /images/homepage/services/services/2/image.png
+    service: Specialised Coaching (Before and After School)
+    content: >
+      Kickstart the day or finish strong with specialist coaching sessions just
+      for students! Whether it's a block of training to sharpen up their skills
+      for PSSA or CHS  **Basketball, Football, Athletics (sprints, jumps,
+      throws, distance)** or want to sharpen your **Fundamental Movement
+      Skills**, these sessions are designed to help the students grow as an
+      athlete and as a team. Our coaches will guide you to improve skills, boost
+      confidence, and enjoy training in a fun and supportive environment — all
+      before or after the school bell.
   - image: /images/homepage/services/services/3/image.png
     service: School Carnivals & Special Events
     content: >
