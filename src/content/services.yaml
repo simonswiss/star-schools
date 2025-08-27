@@ -2,15 +2,15 @@ services:
   - image: /images/homepage/services/services/0/image.png
     service: Sporting Schools Programs
     content: >
-      Star-Schools is a **registered Sporting Schools provider** for **Football,
-      Basketball, and Athletics (all disciplines)**. Our qualified coaches can
-      deliver complete programs across these sports, ensuring students build
-      skills, confidence, and a love of movement.
+      Star-Schools is a registered Sporting Schools provider for Football,
+      Basketball, Gymnastics and Athletics (all disciplines). Our qualified
+      coaches can deliver complete programs across these sports, ensuring
+      students build skills, confidence, and a love of movement.
 
 
       Because we are an approved provider, schools can access and apply the
-      **Sporting Schools grant** to fund our programs, making high-quality
-      coaching more affordable and accessible.
+      Sporting Schools grant to fund our programs, making high-quality coaching
+      more affordable and accessible.
 
 
       With engaging sessions tailored to age and ability, Star-Schools makes it
@@ -19,34 +19,34 @@ services:
   - image: /images/homepage/services/services/1/image.png
     service: In-School PE & Release from Face-to-Face Teaching
     content: >
-      Star-Schools offers **NESA qualified and approved** coaching that fits
+      Star-Schools offers NESA qualified and approved coaching that fits
       seamlessly into your school timetable. Our programs provide schools with
-      high-quality **In-School PE delivery** as well as **Release from
-      Face-to-Face (RFF) Teaching** options.
+      high-quality In-School PE delivery as well as Release from Face-to-Face
+      (RFF) Teaching options.
 
 
       We tailor each session to meet curriculum outcomes, matching sports and
       movement skills directly to the syllabus. Every lesson is structured,
-      engaging, and development-focused, with **reportable outcomes** provided
-      for your students.
+      engaging, and development-focused, with reportable outcomes provided for
+      your students.
   - image: /images/homepage/services/services/2/image.png
     service: Specialised Coaching (Before and After School)
     content: >
       Kickstart the day or finish strong with specialist coaching sessions just
       for students! Whether it's a block of training to sharpen up their skills
-      for PSSA or CHS  **Basketball, Football, Athletics (sprints, jumps,
-      throws, distance)** or want to sharpen your **Fundamental Movement
-      Skills**, these sessions are designed to help the students grow as an
-      athlete and as a team. Our coaches will guide you to improve skills, boost
-      confidence, and enjoy training in a fun and supportive environment — all
-      before or after the school bell.
+      for PSSA or CHS  Basketball, Football, Gymnastics, Athletics (all
+      disciplines) or want to sharpen your Fundamental Movement Skills, these
+      sessions are designed to help the students grow as an athlete and as a
+      team. Our coaches will guide you to improve skills, boost confidence, and
+      enjoy training in a fun and supportive environment — all before or after
+      the school bell.
   - image: /images/homepage/services/services/3/image.png
     service: School Carnivals & Special Events
     content: >
       Star-Schools takes the stress out of organising your big school events.
-      From **athletics and swimming carnivals** to **gala days and special
-      celebrations**, our team provides complete **planning, management, and
-      execution**.
+      From athletics and swimming carnivals to gala days and special
+      celebrations, our team provides complete planning, management, and
+      execution.
 
 
       We handle everything,  from scheduling and equipment setup to officiating,
@@ -54,3 +54,29 @@ services:
       With our experience and professional team, schools can be confident every
       event will run seamlessly, be inclusive, and celebrate student
       achievement.
+  - service: Child Protection & Respectful Relationships Program
+    content: >
+      Our program is an interactive theory program that helps students build the
+      skills and confidence they need to stay safe and form positive, respectful
+      relationships. Delivered as either a single interactive seminar or a
+      multi-week program, sessions are designed to align with the PDHPE syllabus
+      outcomes around respectful relationships and child safety.
+
+
+      Through engaging discussions and activities, students explore key themes
+      such as:
+
+
+      * Keeping Myself Safe – recognising safe and unsafe situations,
+      help-seeking and protective strategies.
+
+      * Staying Safe – building personal boundaries, online safety, and knowing
+      who to turn to for support.
+
+      * Respectful Relationships – understanding respect, empathy, consent, and
+      effective communication.
+
+
+      This program provides a safe and supportive learning environment, giving
+      students practical tools to protect themselves and contribute to a
+      respectful school culture.
