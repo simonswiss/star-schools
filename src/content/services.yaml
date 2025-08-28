@@ -54,7 +54,8 @@ services:
       With our experience and professional team, schools can be confident every
       event will run seamlessly, be inclusive, and celebrate student
       achievement.
-  - service: Child Protection & Respectful Relationships Program
+  - image: /images/homepage/services/services/4/image.png
+    service: Child Protection & Respectful Relationships Program
     content: >
       Our program is an interactive theory program that helps students build the
       skills and confidence they need to stay safe and form positive, respectful
