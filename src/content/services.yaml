@@ -81,3 +81,15 @@ services:
       This program provides a safe and supportive learning environment, giving
       students practical tools to protect themselves and contribute to a
       respectful school culture.
+  - image: /images/homepage/services/services/5/image.webp
+    service: Early Childhood Programs
+    content: >
+      Our program introduces young children to the foundations of Health and
+      Physical Education through fun, active, and engaging sessions. Designed
+      specifically for early learners, the program focuses on developing
+      **fundamental movement skills** such as running, jumping, throwing,
+      catching, balance, and coordination. Activities are play-based,
+      age-appropriate, and encourage social interaction, teamwork, and
+      confidence in movement. By building these essential skills early, children
+      are supported in developing healthy habits, physical literacy, and a
+      positive attitude towards being active.
