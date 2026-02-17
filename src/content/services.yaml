@@ -2,9 +2,9 @@ services:
   - image: /images/homepage/services/services/0/image.png
     service: Sporting Schools Programs
     content: >
-      Star-Schools is a registered Sporting Schools provider for **Football,
-      Basketball, Gymnastics, Hockey and Athletics (all disciplines)**. Our
-      qualified coaches can deliver complete programs across these sports,
+      Star-Schools is a registered Sporting Schools provider for **Soccer,
+      Basketball, Touch Football, AFL, Hockey and Athletics (all disciplines)**.
+      Our qualified coaches can deliver complete programs across these sports,
       ensuring students build skills, confidence, and a love of movement.
 
 
